@@ -4,7 +4,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 42px;
@@ -21,6 +21,8 @@ header {
     width: 935px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo {
@@ -291,4 +293,8 @@ header {
 
 .curtidas strong {
     font-weight: 500;
+}
+
+@media (max-width: 935px) {
+    .ajuste{display: none;}
 }
