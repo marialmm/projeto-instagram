@@ -71,23 +71,27 @@ header {
     font-size: 23px;
 }
 
+.topo>ion-icon {
+    display: none;
+}
+
 .conteudo {
     background-color: #FAFAFA;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 88px;
- }
+}
 
 .stories {
     width: 614px;
     height: 118px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border: solid 1px #DBDBDB;
     border-radius: 3px;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 .story {
@@ -95,6 +99,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 14px;
 }
 
 .story img {
@@ -103,12 +108,12 @@ header {
 
 .story p {}
 
-.vazio{
+.vazio {
     width: 293px;
     margin-left: 28px;
 }
 
-.ajuste{
+.ajuste {
     position: fixed;
     top: 88px;
     width: 100%;
@@ -117,7 +122,7 @@ header {
     justify-content: center;
 }
 
-.ajuste .vazio{
+.ajuste .vazio {
     width: 614px;
     background-color: rgba(0, 0, 0, 0);
 
@@ -126,7 +131,7 @@ header {
 .sidebar {
     width: 293px;
     padding-top: 23px;
-    
+
 }
 
 .perfil {
@@ -135,7 +140,7 @@ header {
 }
 
 
-.usuario{
+.usuario {
     font-weight: 500;
     font-size: 14px;
     color: #262626;
@@ -146,7 +151,7 @@ header {
     margin-right: 17px;
 }
 
-.perfil div{
+.perfil div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,10 +177,11 @@ header {
     color: #8E8E8E;
 }
 
-.sugestoes .titulo p{
+.sugestoes .titulo p {
     font-size: 12px;
     font-weight: 500;
-    color: #262626;;
+    color: #262626;
+    ;
 }
 
 .sugestao {
@@ -189,7 +195,7 @@ header {
     margin-right: 11px;
 }
 
-.sugestao div{
+.sugestao div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -210,18 +216,18 @@ header {
     color: #139EF2;
 }
 
-.licenca{
+.licenca {
     font-size: 11px;
     font-weight: 400;
     line-height: 14px;
     color: #C7C7C7;
 }
 
-.licenca p{
+.licenca p {
     margin-bottom: 18px;
 }
 
-.galeria{
+.galeria {
     width: 614px;
     margin-top: 24px;
 }
@@ -239,7 +245,7 @@ header {
     align-items: center;
 }
 
-.post img:first-child{
+.post img:first-child {
     width: 32px;
     margin: 15px;
 }
@@ -249,7 +255,7 @@ header {
     margin-right: 410px;
 }
 
-.post ion-icon{
+.post ion-icon {
     font-size: 15px;
     ;
 }
@@ -295,6 +301,107 @@ header {
     font-weight: 500;
 }
 
+footer {
+    display: none;
+}
+
 @media (max-width: 935px) {
-    .ajuste{display: none;}
+    .ajuste {
+        display: none;
+    }
+
+    .vazio{
+        display: none;
+    }
+}
+
+@media (max-width: 614px) {
+    header {
+        width: 100vw;
+    }
+
+    .topo{
+        width: 100vw;
+    }
+
+    .logo{
+        width: 55%;
+    }
+
+    .logo ion-icon {
+        border: none;
+    }
+
+    .pesquisar {
+        display: none;
+    }
+
+    .menu ion-icon {
+        display: none;
+    }
+
+    .topo > ion-icon {
+        display: block;
+        font-size: 23px;
+    }
+
+    .conteudo{
+        margin-top: 71px;
+        width: 100vw;
+    }
+
+    .direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .stories{
+        width: 100vw;
+        background-color: #FAFAFA;
+        border: none;
+        justify-content: space-between;
+    }
+    
+    .galeria{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .publi{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .post .usuario{
+        margin-right: calc(100vw - 203px);
+    }
+
+    .post .foto{
+        width: 100vw;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 42px;
+        background-color: #FFFFFF;
+    }
+
+    footer ion-icon{
+        font-size: 23px;
+        margin: 0 20px;
+
+    }
 }
