@@ -4,7 +4,6 @@ body {
 
 header {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 42px;
@@ -14,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     background-color: #FFFFFF;
+    z-index: 1;
 
 }
 
@@ -75,7 +75,7 @@ header {
     display: none;
 }
 
-.conteudo {
+main {
     background-color: #FAFAFA;
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +100,10 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 14px;
+}
+
+.stories .story:first-child{
+    margin-left: 18px;
 }
 
 .story img {
@@ -138,7 +142,6 @@ header {
     display: flex;
     margin-bottom: 24px;
 }
-
 
 .usuario {
     font-weight: 500;
@@ -233,7 +236,7 @@ header {
 }
 
 .publi {
-    height: 749px;
+    /* height: 749px; */
     border: solid 1px #DBDBDB;
     background-color: #FFFFFF;
     margin-bottom: 60px;
@@ -256,7 +259,7 @@ header {
 }
 
 .post ion-icon {
-    font-size: 15px;
+    font-size: 19px;
     ;
 }
 
@@ -271,20 +274,21 @@ header {
 }
 
 .opcoes div {
-    width: 80px;
+    width: 96px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .opcoes ion-icon {
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .curtidas {
     margin-left: 17px;
     display: flex;
     align-items: center;
+    margin-bottom: 13px;
 }
 
 .curtidas img {
@@ -299,6 +303,87 @@ header {
 
 .curtidas strong {
     font-weight: 500;
+}
+
+.legenda{
+    margin-left: 17px;
+    margin-bottom: 2px;
+}
+
+.legenda p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.legenda .usuario{
+    margin-right: 5px;
+}
+
+.comentarios{
+    /* background-color: blue; */
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.ver-todos{
+    color: #8e8e8e;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.comentario{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.comentario p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.horario{
+    color: #8e8e8e;
+    font-size: 10px;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.comentar{
+    border-top: solid 1px #DBDBDB;
+    padding: 6px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.comentar ion-icon{
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.comentar input{
+    border:none;
+    width: 490px;
+    color: #8e8e8e;
+    font-size: 14px;
+    outline: none;
+}
+
+.comentar button {
+    border: none;
+    background-color: transparent;
+    color: #B2DFFC;
+    font-weight: 600;
+    transition-duration: 300ms;
+}
+
+.comentar button:hover {
+    color: #0095F6;
+
 }
 
 footer {
@@ -370,6 +455,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .publi{
         width: 100vw;
         height: auto;
@@ -381,11 +467,15 @@ footer {
     }
 
     .post .usuario{
-        margin-right: calc(100vw - 203px);
+        margin-right: calc(100vw - 215px);
     }
 
     .post .foto{
         width: 100vw;
+    }
+
+    .opcoes{
+        width: 90%;
     }
 
     footer{
@@ -402,6 +492,5 @@ footer {
     footer ion-icon{
         font-size: 23px;
         margin: 0 20px;
-
     }
 }
