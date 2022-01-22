@@ -47,21 +47,20 @@ header {
     width: 103px;
 }
 
-.pesquisar {
+.pesquisar input {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 215px;
     height: 28px;
     border: solid 1px #DBDBDB;
     border-radius: 3px;
     background-color: #FAFAFA;
-}
-
-.pesquisar p {
     font-size: 12px;
     font-weight: normal;
     color: #979797;
+    outline: none;
 }
 
 .menu {
@@ -96,6 +95,7 @@ main {
     border-radius: 3px;
     background-color: #FFFFFF;
     overflow: hidden;
+    position: relative;
 }
 
 .story {
@@ -114,31 +114,19 @@ main {
     width: 66px;
 }
 
-.story p {}
-
-.vazio {
-    width: 293px;
-    margin-left: 28px;
-}
-
-.ajuste {
-    position: fixed;
-    top: 88px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ajuste .vazio {
-    width: 614px;
-    background-color: rgba(0, 0, 0, 0);
-
+.stories ion-icon {
+    position: absolute;
+    right: 0;
+    top: 38%;
+    font-size: 29px;
+    color: #FFFFFF;
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
 .sidebar {
     width: 293px;
     padding-top: 23px;
+    padding-left: 29px;
 
 }
 
@@ -324,9 +312,9 @@ main {
 }
 
 .comentarios{
-    /* background-color: blue; */
     margin-left: 17px;
     margin-right: 17px;
+    width: 92%;
 }
 
 .ver-todos{
@@ -363,6 +351,7 @@ main {
     align-items: center;
     height: 40px;
     width: 100%;
+    position: relative;
 }
 
 .comentar ion-icon{
@@ -372,10 +361,11 @@ main {
 
 .comentar input{
     border:none;
-    width: 490px;
     color: #8e8e8e;
     font-size: 14px;
     outline: none;
+    position: absolute;
+    left: 50px;
 }
 
 .comentar button {
@@ -396,11 +386,7 @@ footer {
 }
 
 @media (max-width: 935px) {
-    .ajuste {
-        display: none;
-    }
-
-    .vazio{
+    .sidebar{
         display: none;
     }
 }
@@ -435,8 +421,8 @@ footer {
         font-size: 23px;
     }
 
-    .conteudo{
-        margin-top: 71px;
+    main{
+        margin-top: 44px;
         width: 100vw;
     }
 
@@ -453,12 +439,17 @@ footer {
         border: none;
         justify-content: space-between;
     }
+
+    .stories ion-icon{
+        display: none;
+    }
     
     .galeria{
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
     }
 
     .publi{
