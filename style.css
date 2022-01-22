@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -358,6 +362,7 @@ main {
     justify-content: space-between;
     align-items: center;
     height: 40px;
+    width: 100%;
 }
 
 .comentar ion-icon{
