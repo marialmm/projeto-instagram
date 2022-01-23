@@ -84,6 +84,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 88px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .stories {
@@ -127,7 +129,8 @@ main {
     width: 293px;
     padding-top: 23px;
     padding-left: 29px;
-
+    position: sticky;
+    top: 50px;
 }
 
 .perfil {
@@ -152,15 +155,11 @@ main {
     justify-content: center;
 }
 
-.perfil .usuario {}
-
 .perfil .nome {
     font-weight: 300;
     font-size: 14px;
     color: #262626;
 }
-
-.sugestoes {}
 
 .sugestoes .titulo {
     display: flex;
@@ -196,8 +195,6 @@ main {
     flex-direction: column;
     margin-right: auto;
 }
-
-.sugestao .usuario {}
 
 .sugestao .status {
     font-weight: 400;
@@ -426,7 +423,7 @@ footer {
         width: 100vw;
     }
 
-    .direita{
+    .esquerda{
         display: flex;
         flex-direction: column;
         align-items: center;
