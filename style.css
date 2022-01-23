@@ -112,8 +112,18 @@ main {
     margin-left: 18px;
 }
 
-.story img {
+.story .imagem{
     width: 66px;
+    height: 66px;
+    background-image: url(midias/stories_background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 66px;
+}
+
+.story img {
+    width: 56px;
 }
 
 .stories ion-icon {
@@ -131,6 +141,7 @@ main {
     padding-left: 29px;
     position: sticky;
     top: 50px;
+    align-self: flex-start;
 }
 
 .perfil {
