@@ -101,11 +101,11 @@ main {
 }
 
 .story {
+    width: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 14px;
 }
 
 .stories .story:first-child{
@@ -124,6 +124,16 @@ main {
 
 .story img {
     width: 56px;
+}
+
+.story p{
+    width: 80px;
+    padding: 6px 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .stories ion-icon {
@@ -147,6 +157,7 @@ main {
 .perfil {
     display: flex;
     margin-bottom: 24px;
+    line-height: 17px;
 }
 
 .usuario {
@@ -169,8 +180,9 @@ main {
 .perfil .nome {
     font-weight: 300;
     font-size: 14px;
-    color: #262626;
+    color: #8E8E8E;
 }
+
 
 .sugestoes .titulo {
     display: flex;
@@ -193,6 +205,7 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    line-height: 16px;
 }
 
 .sugestao img {
