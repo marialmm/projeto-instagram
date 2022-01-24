@@ -280,6 +280,10 @@ main {
     width: 612px;
 }
 
+.post video{
+    width: 612px;
+}
+
 .opcoes {
     display: flex;
     justify-content: space-between;
@@ -488,6 +492,10 @@ footer {
     }
 
     .post .foto{
+        width: 100vw;
+    }
+
+    .post video{
         width: 100vw;
     }
 
