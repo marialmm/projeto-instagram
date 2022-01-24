@@ -10,7 +10,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 42px;
+    height: 54px;
     padding-top: 13px;
     padding-bottom: 10px;
     border-bottom: solid 1px #DBDBDB;
@@ -21,12 +21,16 @@ header {
 
 }
 
-.topo {
+.topo-desktop {
     width: 935px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.topo-mobile {
+    display: none;
 }
 
 .logo {
@@ -108,11 +112,11 @@ main {
     align-items: center;
 }
 
-.stories .story:first-child{
+.stories .story:first-child {
     margin-left: 18px;
 }
 
-.story .imagem{
+.story .imagem {
     width: 66px;
     height: 66px;
     background-image: url(midias/stories_background.jpg);
@@ -120,13 +124,14 @@ main {
     justify-content: center;
     align-items: center;
     background-size: 66px;
+    border-radius: 33px;
 }
 
 .story img {
     width: 56px;
 }
 
-.story p{
+.story p {
     width: 80px;
     padding: 6px 2px;
     overflow: hidden;
@@ -142,7 +147,7 @@ main {
     top: 38%;
     font-size: 29px;
     color: #FFFFFF;
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
 }
 
 .sidebar {
@@ -280,7 +285,7 @@ main {
     width: 612px;
 }
 
-.post video{
+.post video {
     width: 612px;
 }
 
@@ -322,53 +327,53 @@ main {
     font-weight: 500;
 }
 
-.legenda{
+.legenda {
     margin-left: 17px;
     margin-bottom: 2px;
 }
 
-.legenda p{
+.legenda p {
     font-size: 14px;
     line-height: 18px;
 }
 
-.legenda .usuario{
+.legenda .usuario {
     margin-right: 5px;
 }
 
-.comentarios{
+.comentarios {
     margin-left: 17px;
     margin-right: 17px;
     width: 92%;
 }
 
-.ver-todos{
+.ver-todos {
     color: #8e8e8e;
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 2px;
 }
 
-.comentario{
+.comentario {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 2px;
 }
 
-.comentario p{
+.comentario p {
     font-size: 14px;
     line-height: 18px;
 }
 
-.horario{
+.horario {
     color: #8e8e8e;
     font-size: 10px;
     line-height: 18px;
     margin-bottom: 2px;
 }
 
-.comentar{
+.comentar {
     border-top: solid 1px #DBDBDB;
     padding: 6px 17px;
     display: flex;
@@ -379,13 +384,13 @@ main {
     position: relative;
 }
 
-.comentar ion-icon{
+.comentar ion-icon {
     font-size: 23px;
     margin-right: 16px;
 }
 
-.comentar input{
-    border:none;
+.comentar input {
+    border: none;
     color: #8e8e8e;
     font-size: 14px;
     outline: none;
@@ -411,7 +416,7 @@ footer {
 }
 
 @media (max-width: 935px) {
-    .sidebar{
+    .sidebar {
         display: none;
     }
 }
@@ -421,55 +426,52 @@ footer {
         width: 100vw;
     }
 
-    .topo{
+    .topo-mobile {
         width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 18px;
+        padding-left: 20px;
     }
 
-    .logo{
-        width: 55%;
-    }
-
-    .logo ion-icon {
-        border: none;
+    .topo-desktop {
+        display: none;
     }
 
     .pesquisar {
         display: none;
     }
 
-    .menu ion-icon {
-        display: none;
-    }
-
-    .topo > ion-icon {
+    .topo-mobile ion-icon {
         display: block;
         font-size: 23px;
     }
 
-    main{
+    main {
         margin-top: 44px;
         width: 100vw;
     }
 
-    .esquerda{
+    .esquerda {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
     }
 
-    .stories{
+    .stories {
         width: 100vw;
         background-color: #FAFAFA;
         border: none;
         justify-content: space-between;
     }
 
-    .stories ion-icon{
+    .stories ion-icon {
         display: none;
     }
-    
-    .galeria{
+
+    .galeria {
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -477,7 +479,7 @@ footer {
         margin-top: 0;
     }
 
-    .publi{
+    .publi {
         width: 100vw;
         height: auto;
         display: flex;
@@ -487,23 +489,23 @@ footer {
         margin-left: auto;
     }
 
-    .post .usuario{
+    .post .usuario {
         margin-right: calc(100vw - 215px);
     }
 
-    .post .foto{
+    .post .foto {
         width: 100vw;
     }
 
-    .post video{
+    .post video {
         width: 100vw;
     }
 
-    .opcoes{
+    .opcoes {
         width: 90%;
     }
 
-    footer{
+    footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -514,7 +516,7 @@ footer {
         background-color: #FFFFFF;
     }
 
-    footer ion-icon{
+    footer ion-icon {
         font-size: 23px;
         margin: 0 20px;
     }
